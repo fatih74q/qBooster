@@ -12,6 +12,7 @@
             --text: #c9d1d9;
             --accent: #58a6ff;
             --border: #30363d;
+            --success: #238636;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -25,107 +26,124 @@
         .dev-profile {
             width: 100%;
             background: #010409;
-            padding: 20px 0;
+            padding: 25px 0;
             border-bottom: 1px solid var(--border);
             text-align: center;
         }
         .dev-avatar {
-            width: 80px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            border: 2px solid var(--accent);
-            margin-bottom: 10px;
+            border: 3px solid var(--accent);
+            margin-bottom: 12px;
+            box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
         }
         .badge {
-            background: #238636;
+            background: var(--success);
             color: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
             font-weight: bold;
+            text-transform: uppercase;
         }
-        header {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        h1 { font-size: 40px; color: white; margin-bottom: 10px; }
+        header { padding: 50px 20px; text-align: center; }
+        h1 { font-size: 45px; color: white; margin: 15px 0; letter-spacing: -1px; }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
+            gap: 25px;
+            max-width: 1100px;
             width: 90%;
+            margin-bottom: 50px;
         }
         .card {
             background: var(--card-bg);
             border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 25px;
-            transition: 0.2s;
+            border-radius: 12px;
+            padding: 30px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
         }
-        .card:hover { border-color: var(--accent); transform: scale(1.02); }
-        .card i { font-size: 24px; color: var(--accent); margin-bottom: 15px; }
-        .btn-container { margin: 50px 0; }
-        .github-btn {
-            background: #21262d;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 6px;
-            text-decoration: none;
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); background: #1c2128; }
+        .card i { font-size: 28px; color: var(--accent); margin-bottom: 20px; }
+        .card h3 { margin: 0 0 10px 0; color: white; }
+        .btn-container { 
+            background: #161b22;
+            padding: 40px;
+            border-radius: 15px;
             border: 1px solid var(--border);
-            font-weight: 600;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .download-btn {
+            background: var(--success);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 20px;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            transition: 0.2s;
         }
-        .github-btn:hover { background: #30363d; }
-        footer { padding: 40px; border-top: 1px solid var(--border); width: 100%; text-align: center; font-size: 12px; }
+        .download-btn:hover { background: #2ea44f; transform: scale(1.05); }
+        .github-link {
+            display: block;
+            margin-top: 20px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        footer { padding: 40px; color: #8b949e; font-size: 13px; }
     </style>
 </head>
 <body>
 
     <div class="dev-profile">
-        <img src="https://github.com/fatih74q.png" class="dev-avatar" alt="Fatih">
-        <div style="font-weight: bold; color: white;">fatih74q</div>
-        <div style="font-size: 14px; color: #8b949e;">Independent Developer</div>
-        <span class="badge">v0.2 Beta</span>
+        <img src="https://github.com/fatih74q.png" class="dev-avatar" alt="fatih74q">
+        <div style="font-weight: bold; color: white; font-size: 20px;">fatih74q</div>
+        <div style="font-size: 14px; color: #8b949e; margin-bottom: 10px;">Full-Stack Developer & Optimizer</div>
+        <span class="badge">v0.2 Beta Ready</span>
     </div>
 
     <header>
-        <h1><i class="fas fa-rocket"></i> qBooster</h1>
-        <p>The next-gen Windows optimizer. Fast, Open-source, Effective.</p>
+        <h1>qBooster</h1>
+        <p style="font-size: 18px; color: #8b949e;">Fast. Minimal. Powerful. The only tool your PC needs.</p>
     </header>
 
     <div class="grid">
         <div class="card">
             <i class="fas fa-bolt"></i>
             <h3>Ultimate Power</h3>
-            <p>Unlocks the hidden "Ultimate Performance" mode for maximum CPU frequency.</p>
+            <p>Activates the hidden Windows Ultimate Performance plan for peak CPU stability.</p>
         </div>
         <div class="card">
-            <h3><i class="fas fa-broom"></i> Deep Clean</h3>
-            <p>Deletes Temp, Prefetch, and cache files to speed up your OS.</p>
+            <i class="fas fa-broom"></i>
+            <h3>Clean Sweep</h3>
+            <p>Deep cleans system logs, temp files, and prefetch data to eliminate stutter.</p>
         </div>
         <div class="card">
-            <h3><i class="fas fa-network-wired"></i> DNS Boost</h3>
-            <p>Optimized DNS settings for gaming stability and lower ping.</p>
-        </div>
-        <div class="card">
-            <h3><i class="fas fa-code"></i> Live Log</h3>
-            <p>Professional console logging system to track every action in real-time.</p>
+            <i class="fas fa-shield-alt"></i>
+            <h3>DNS Shield</h3>
+            <p>One-tap Google/Cloudflare DNS switch for lightning-fast web and low ping gaming.</p>
         </div>
     </div>
 
     <div class="btn-container">
-        <a href="https://github.com/fatih74q/qBooster" class="github-btn">
-            <i class="fab fa-github"></i> View on GitHub
+        <a href="https://github.com/fatih74q/qBooster/releases/download/v0.2-beta/qBooster.zip" class="download-btn">
+            <i class="fas fa-cloud-download-alt"></i> Direct Download v0.2
         </a>
-        <a href="https://github.com/fatih74q/qBooster/releases/latest" class="github-btn" style="background: #238636; border-color: #2ea44f;">
-            <i class="fas fa-download"></i> Download v0.2
+        <a href="https://github.com/fatih74q/qBooster" class="github-link">
+            <i class="fab fa-github"></i> View Source Code on GitHub
         </a>
     </div>
 
     <footer>
-        &copy; 2026 qBooster Project | Built with passion in Bartın
+        &copy; 2026 qBooster | Made with ❤️ by Fatih in Bartın
     </footer>
 
 </body>
