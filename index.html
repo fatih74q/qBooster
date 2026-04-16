@@ -1,160 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>qBooster | Official Site</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body { 
-            background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            overflow: hidden;
-            color: #202124;
-        }
+<div class="version-badge">v0.2 Beta is LIVE! 🚀</div>
 
-        /* Smooth Entrance Animation */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .container { animation: fadeInUp 1s ease-out forwards; }
-
-        nav { padding: 30px 50px; display: flex; justify-content: flex-end; }
-        nav a { 
-            text-decoration: none; 
-            color: #5f6368; 
-            font-weight: 600; 
-            font-size: 15px; 
-            padding: 10px 20px;
-            border-radius: 20px;
-            transition: all 0.3s;
-        }
-        nav a:hover { background: rgba(66, 133, 244, 0.1); color: #4285F4; }
-
-        .main-content { 
-            flex: 1; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            margin-top: -60px;
-        }
-        
-        .logo { font-size: 95px; font-weight: 800; margin-bottom: 15px; letter-spacing: -4px; }
-        .q { color: #4285F4; } 
-        .boost { color: #34A853; text-shadow: 0 5px 15px rgba(52, 168, 83, 0.15); } 
-        
-        .tagline {
-            color: #5f6368;
-            font-size: 20px;
-            margin-bottom: 45px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Interactive Search-Bar Style Display */
-        .status-bar {
-            width: 100%;
-            max-width: 620px;
-            background: white;
-            border: 1px solid #dfe1e5;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            border-radius: 30px;
-            height: 56px;
-            display: flex;
-            align-items: center;
-            padding: 0 30px;
-            margin-bottom: 40px;
-            color: #9aa0a6;
-            font-size: 16px;
-            border-left: 5px solid #34A853; /* Side accent */
-        }
-
-        .buttons { display: flex; gap: 20px; }
-        
-        .btn {
-            padding: 14px 35px;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.4s;
-            display: inline-block;
-        }
-
-        .btn-download {
-            background-color: #34A853;
-            color: white;
-            box-shadow: 0 8px 20px rgba(52, 168, 83, 0.3);
-        }
-        .btn-download:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 25px rgba(52, 168, 83, 0.4);
-            background-color: #2d9147;
-        }
-
-        .btn-github {
-            background-color: #24292e;
-            color: white;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
-        .btn-github:hover {
-            transform: translateY(-3px);
-            background-color: #000;
-        }
-        
-        footer { 
-            padding: 30px 60px; 
-            color: #70757a; 
-            font-size: 14px; 
-            border-top: 1px solid rgba(0,0,0,0.05); 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-            background: rgba(255,255,255,0.5);
-        }
-
-        .tech-badge {
-            border: 1px solid #dadce0;
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-weight: bold;
-            color: #3c4043;
-        }
-    </style>
-</head>
-<body>
-    <nav class="container">
-        <a href="https://github.com/fatih74q">Developer Profile</a>
-    </nav>
-
-    <div class="main-content container">
-        <div class="logo">
-            <span class="q">q</span><span class="boost">Booster</span>
+<section id="features">
+    <h2>Why qBooster v0.2?</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>⚡ Ultimate Performance</h3>
+            <p>Unlock the hidden <strong>Ultimate Performance</strong> mode in Windows. Maximize your CPU power for gaming!</p>
         </div>
-
-        <p class="tagline">Ultimate System Performance Tool</p>
-
-        <div class="status-bar">
-            Optimizing Windows environment for maximum FPS...
+        <div class="feature-card">
+            <h3>🧹 Advanced Cleaning</h3>
+            <p>Clean system junk (Temp, Prefetch) in seconds. Reclaim your disk space and speed up your PC.</p>
         </div>
-
-        <div class="buttons">
-            <a href="qBooster.zip" class="btn btn-download">Download v0.1 Beta</a>
-            <a href="https://github.com/fatih74q/qBooster" class="btn btn-github">View on GitHub</a>
+        <div class="feature-card">
+            <h3>🌐 DNS Optimizer</h3>
+            <p>Get lower ping and more stable connection with Google & Cloudflare DNS integration.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🟢 Live Activity Logs</h3>
+            <p>Monitor every optimization step in real-time through the new console log system.</p>
         </div>
     </div>
+</section>
 
-    <footer class="container">
-        <div>
-            Project by <b>Fatih</b> | Bartın, Türkiye 🇹🇷
-        </div>
-        <div class="tech-badge">Powered by Python</div>
-    </footer>
-</body>
-</html>
+<section id="download">
+    <a href="https://github.com/fatih74q/qBooster/releases/latest" class="download-button">
+        Download qBooster v0.2 Beta
+    </a>
+    <p class="sub-text">100% Open Source & Free to use.</p>
+</section>
