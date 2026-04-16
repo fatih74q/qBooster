@@ -3,117 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>qBooster v0.2 Beta | Ultimate FPS Boost</title>
+    <title>fatih74q | qBooster v0.2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --text: #c9d1d9;
+            --accent: #58a6ff;
+            --border: #30363d;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            color: #202124;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
             margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        header {
+        .dev-profile {
             width: 100%;
-            padding: 40px 0;
+            background: #010409;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
             text-align: center;
-            background: white;
-            border-bottom: 1px solid #dadce0;
         }
-        .version-badge {
-            background-color: #e8f0fe;
-            color: #1967d2;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 14px;
+        .dev-avatar {
+            width: 80px;
+            border-radius: 50%;
+            border: 2px solid var(--accent);
             margin-bottom: 10px;
-            display: inline-block;
         }
-        h1 { font-size: 36px; margin: 10px 0; }
-        .feature-grid {
+        .badge {
+            background: #238636;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        header {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        h1 { font-size: 40px; color: white; margin-bottom: 10px; }
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             max-width: 1000px;
             width: 90%;
-            margin: 40px 0;
         }
-        .feature-card {
-            background: white;
-            border: 1px solid #dadce0;
-            border-radius: 8px;
-            padding: 24px;
-            transition: transform 0.2s, box-shadow 0.2s;
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 25px;
+            transition: 0.2s;
         }
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-        .feature-card h3 {
-            margin-top: 0;
-            display: flex;
+        .card:hover { border-color: var(--accent); transform: scale(1.02); }
+        .card i { font-size: 24px; color: var(--accent); margin-bottom: 15px; }
+        .btn-container { margin: 50px 0; }
+        .github-btn {
+            background: #21262d;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            border: 1px solid var(--border);
+            font-weight: 600;
+            display: inline-flex;
             align-items: center;
             gap: 10px;
-            color: #1a73e8;
         }
-        .download-section {
-            margin: 40px 0;
-            text-align: center;
-        }
-        .download-button {
-            background-color: #1a73e8;
-            color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-            font-size: 18px;
-            transition: background 0.3s;
-        }
-        .download-button:hover { background-color: #174ea6; }
-        .sub-text { color: #5f6368; margin-top: 15px; font-size: 14px; }
-        footer { margin-bottom: 40px; color: #70757a; font-size: 12px; }
+        .github-btn:hover { background: #30363d; }
+        footer { padding: 40px; border-top: 1px solid var(--border); width: 100%; text-align: center; font-size: 12px; }
     </style>
 </head>
 <body>
 
+    <div class="dev-profile">
+        <img src="https://github.com/fatih74q.png" class="dev-avatar" alt="Fatih">
+        <div style="font-weight: bold; color: white;">fatih74q</div>
+        <div style="font-size: 14px; color: #8b949e;">Independent Developer</div>
+        <span class="badge">v0.2 Beta</span>
+    </div>
+
     <header>
-        <div class="version-badge">v0.2 Beta is LIVE! 🚀</div>
-        <h1>qBooster</h1>
-        <p>The Ultimate Windows Optimizer for Gamers</p>
+        <h1><i class="fas fa-rocket"></i> qBooster</h1>
+        <p>The next-gen Windows optimizer. Fast, Open-source, Effective.</p>
     </header>
 
-    <div class="feature-grid">
-        <div class="feature-card">
-            <h3>⚡ Ultimate Performance</h3>
-            <p>Unlock the hidden <strong>Ultimate Performance</strong> power plan. Maximum CPU clock speeds for your favorite games.</p>
+    <div class="grid">
+        <div class="card">
+            <i class="fas fa-bolt"></i>
+            <h3>Ultimate Power</h3>
+            <p>Unlocks the hidden "Ultimate Performance" mode for maximum CPU frequency.</p>
         </div>
-        <div class="feature-card">
-            <h3>🧹 Advanced Junk Cleaner</h3>
-            <p>Delete Temp, Prefetch, and Log files in one click. Free up space and reduce system stutter.</p>
+        <div class="card">
+            <h3><i class="fas fa-broom"></i> Deep Clean</h3>
+            <p>Deletes Temp, Prefetch, and cache files to speed up your OS.</p>
         </div>
-        <div class="feature-card">
-            <h3>🌐 DNS Optimizer</h3>
-            <p>Switch to Google or Cloudflare DNS for lower latency and a more stable online experience.</p>
+        <div class="card">
+            <h3><i class="fas fa-network-wired"></i> DNS Boost</h3>
+            <p>Optimized DNS settings for gaming stability and lower ping.</p>
         </div>
-        <div class="feature-card">
-            <h3>🟢 Live Console Logs</h3>
-            <p>Watch every optimization step in real-time with our new integrated logging system.</p>
+        <div class="card">
+            <h3><i class="fas fa-code"></i> Live Log</h3>
+            <p>Professional console logging system to track every action in real-time.</p>
         </div>
     </div>
 
-    <div class="download-section">
-        <a href="https://github.com/fatih74q/qBooster/releases/latest" class="download-button">
-            Download qBooster v0.2
+    <div class="btn-container">
+        <a href="https://github.com/fatih74q/qBooster" class="github-btn">
+            <i class="fab fa-github"></i> View on GitHub
         </a>
-        <p class="sub-text">100% Free & Open Source | Built by Fatih</p>
+        <a href="https://github.com/fatih74q/qBooster/releases/latest" class="github-btn" style="background: #238636; border-color: #2ea44f;">
+            <i class="fas fa-download"></i> Download v0.2
+        </a>
     </div>
 
     <footer>
-        &copy; 2026 qBooster Project | Powered by GitHub Pages
+        &copy; 2026 qBooster Project | Built with passion in Bartın
     </footer>
 
 </body>
