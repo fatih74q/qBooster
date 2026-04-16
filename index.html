@@ -1,30 +1,120 @@
-<div class="version-badge">v0.2 Beta is LIVE! 🚀</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qBooster v0.2 Beta | Ultimate FPS Boost</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #202124;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+            background: white;
+            border-bottom: 1px solid #dadce0;
+        }
+        .version-badge {
+            background-color: #e8f0fe;
+            color: #1967d2;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        h1 { font-size: 36px; margin: 10px 0; }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            width: 90%;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: white;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #1a73e8;
+        }
+        .download-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .download-button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .download-button:hover { background-color: #174ea6; }
+        .sub-text { color: #5f6368; margin-top: 15px; font-size: 14px; }
+        footer { margin-bottom: 40px; color: #70757a; font-size: 12px; }
+    </style>
+</head>
+<body>
 
-<section id="features">
-    <h2>Why qBooster v0.2?</h2>
+    <header>
+        <div class="version-badge">v0.2 Beta is LIVE! 🚀</div>
+        <h1>qBooster</h1>
+        <p>The Ultimate Windows Optimizer for Gamers</p>
+    </header>
+
     <div class="feature-grid">
         <div class="feature-card">
             <h3>⚡ Ultimate Performance</h3>
-            <p>Unlock the hidden <strong>Ultimate Performance</strong> mode in Windows. Maximize your CPU power for gaming!</p>
+            <p>Unlock the hidden <strong>Ultimate Performance</strong> power plan. Maximum CPU clock speeds for your favorite games.</p>
         </div>
         <div class="feature-card">
-            <h3>🧹 Advanced Cleaning</h3>
-            <p>Clean system junk (Temp, Prefetch) in seconds. Reclaim your disk space and speed up your PC.</p>
+            <h3>🧹 Advanced Junk Cleaner</h3>
+            <p>Delete Temp, Prefetch, and Log files in one click. Free up space and reduce system stutter.</p>
         </div>
         <div class="feature-card">
             <h3>🌐 DNS Optimizer</h3>
-            <p>Get lower ping and more stable connection with Google & Cloudflare DNS integration.</p>
+            <p>Switch to Google or Cloudflare DNS for lower latency and a more stable online experience.</p>
         </div>
         <div class="feature-card">
-            <h3>🟢 Live Activity Logs</h3>
-            <p>Monitor every optimization step in real-time through the new console log system.</p>
+            <h3>🟢 Live Console Logs</h3>
+            <p>Watch every optimization step in real-time with our new integrated logging system.</p>
         </div>
     </div>
-</section>
 
-<section id="download">
-    <a href="https://github.com/fatih74q/qBooster/releases/latest" class="download-button">
-        Download qBooster v0.2 Beta
-    </a>
-    <p class="sub-text">100% Open Source & Free to use.</p>
-</section>
+    <div class="download-section">
+        <a href="https://github.com/fatih74q/qBooster/releases/latest" class="download-button">
+            Download qBooster v0.2
+        </a>
+        <p class="sub-text">100% Free & Open Source | Built by Fatih</p>
+    </div>
+
+    <footer>
+        &copy; 2026 qBooster Project | Powered by GitHub Pages
+    </footer>
+
+</body>
+</html>
